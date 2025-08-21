@@ -23,6 +23,9 @@ importers:
       '@babel/core':
         specifier: ^7.22.20
         version: 7.23.0
+      '@ember/string':
+        specifier: 4.0.1
+        version: 4.0.1
       '@embroider/macros':
         specifier: ^1.13.2
         version: 1.13.2
@@ -59,13 +62,13 @@ importers:
         version: 5.3.0(@babel/core@7.23.0)(@ember-data/request@5.3.0(@babel/core@7.23.0))
       '@ember-data/model':
         specifier: ~5.3.0
-        version: 5.3.0(@babel/core@7.23.0)(@ember-data/legacy-compat@5.3.0(@babel/core@7.23.0)(@ember-data/request@5.3.0(@babel/core@7.23.0)))(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(ember-inflector@4.0.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+        version: 5.3.0(@babel/core@7.23.0)(@ember-data/legacy-compat@5.3.0(@babel/core@7.23.0)(@ember-data/request@5.3.0(@babel/core@7.23.0)))(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(ember-inflector@4.0.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
       '@ember-data/request':
         specifier: ~5.3.0
         version: 5.3.0(@babel/core@7.23.0)
       '@ember-data/store':
         specifier: ~5.3.0
-        version: 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+        version: 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
       '@ember-data/tracking':
         specifier: ~5.3.0
         version: 5.3.0(@babel/core@7.23.0)
@@ -75,9 +78,6 @@ importers:
       '@ember/optional-features':
         specifier: ^2.0.0
         version: 2.0.0
-      '@ember/string':
-        specifier: ^3.1.1
-        version: 3.1.1
       '@ember/test-helpers':
         specifier: ^3.2.0
         version: 3.2.0(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))(webpack@5.88.2)
@@ -134,7 +134,7 @@ importers:
         version: 4.0.2
       ember-data:
         specifier: ~5.3.0
-        version: 5.3.0(@babel/core@7.23.0)(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+        version: 5.3.0(@babel/core@7.23.0)(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
       ember-fetch:
         specifier: ^8.1.2
         version: 8.1.2
@@ -1561,6 +1561,9 @@ packages:
   '@ember/string@3.1.1':
     resolution: {integrity: sha512-UbXJ+k3QOrYN4SRPHgXCqYIJ+yWWUg1+vr0H4DhdQPTy8LJfyqwZ2tc5uqpSSnEXE+/1KopHBE5J8GDagAg5cg==}
     engines: {node: 12.* || 14.* || >= 16}
+
+  '@ember/string@4.0.1':
+    resolution: {integrity: sha512-VWeng8BSWrIsdPfffOQt/bKwNKJL7+37gPFh/6iZZ9bke+S83kKqkS30poo4bTGfRcMnvAE0ie7txom+iDu81Q==}
 
   '@ember/test-helpers@3.2.0':
     resolution: {integrity: sha512-3yWpPsK5O77tUdCwW3HayrAcdlRitIRYMvLIG69Pkal1JMIGdNYVTvJ2R1lenhQh2syd/WFmGM07vQuDAtotQw==}
@@ -11179,6 +11182,20 @@ snapshots:
       - '@glint/template'
       - supports-color
 
+  '@ember-data/adapter@5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember/string@4.0.1)(ember-inflector@4.0.2)':
+    dependencies:
+      '@ember-data/private-build-infra': 5.3.0
+      '@ember-data/store': 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+      '@ember/string': 4.0.1
+      '@embroider/macros': 1.13.2
+      ember-cli-babel: 8.0.0(@babel/core@7.23.0)
+      ember-cli-test-info: 1.0.0
+      ember-inflector: 4.0.2
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@glint/template'
+      - supports-color
+
   '@ember-data/debug@5.3.0(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@4.12.3(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember/string@3.1.1)':
     dependencies:
       '@babel/core': 7.23.0
@@ -11217,6 +11234,25 @@ snapshots:
       - uglify-js
       - webpack-cli
 
+  '@ember-data/debug@5.3.0(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember/string@4.0.1)':
+    dependencies:
+      '@babel/core': 7.23.0
+      '@ember-data/private-build-infra': 5.3.0
+      '@ember-data/store': 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+      '@ember/edition-utils': 1.2.0
+      '@ember/string': 4.0.1
+      '@embroider/macros': 1.13.2
+      ember-auto-import: 2.6.3(webpack@5.88.2)
+      ember-cli-babel: 8.0.0(@babel/core@7.23.0)
+      webpack: 5.88.2
+    transitivePeerDependencies:
+      - '@glint/template'
+      - '@swc/core'
+      - esbuild
+      - supports-color
+      - uglify-js
+      - webpack-cli
+
   '@ember-data/graph@5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@4.12.3(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))':
     dependencies:
       '@ember-data/private-build-infra': 5.3.0
@@ -11233,6 +11269,18 @@ snapshots:
     dependencies:
       '@ember-data/private-build-infra': 5.3.0
       '@ember-data/store': 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+      '@ember/edition-utils': 1.2.0
+      '@embroider/macros': 1.13.2
+      ember-cli-babel: 8.0.0(@babel/core@7.23.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@glint/template'
+      - supports-color
+
+  '@ember-data/graph@5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))':
+    dependencies:
+      '@ember-data/private-build-infra': 5.3.0
+      '@ember-data/store': 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
       '@ember/edition-utils': 1.2.0
       '@embroider/macros': 1.13.2
       ember-cli-babel: 8.0.0(@babel/core@7.23.0)
@@ -11271,6 +11319,21 @@ snapshots:
       - '@glint/template'
       - supports-color
 
+  '@ember-data/json-api@5.3.0(@babel/core@7.23.0)(@ember-data/graph@5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))))(@ember-data/request-utils@5.3.0(@babel/core@7.23.0))(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(ember-inflector@4.0.2)':
+    dependencies:
+      '@ember-data/graph': 5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))
+      '@ember-data/private-build-infra': 5.3.0
+      '@ember-data/request-utils': 5.3.0(@babel/core@7.23.0)
+      '@ember-data/store': 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+      '@ember/edition-utils': 1.2.0
+      '@embroider/macros': 1.13.2
+      ember-cli-babel: 8.0.0(@babel/core@7.23.0)
+      ember-inflector: 4.0.2
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@glint/template'
+      - supports-color
+
   '@ember-data/legacy-compat@5.3.0(@babel/core@7.23.0)(@ember-data/request@5.3.0(@babel/core@7.23.0))':
     dependencies:
       '@ember-data/private-build-infra': 5.3.0
@@ -11296,6 +11359,20 @@ snapshots:
       - '@glint/template'
       - supports-color
 
+  '@ember-data/legacy-compat@5.3.0(sfa35kk4fu7gnlrlfeo2cwngji)':
+    dependencies:
+      '@ember-data/private-build-infra': 5.3.0
+      '@ember-data/request': 5.3.0(@babel/core@7.23.0)
+      '@embroider/macros': 1.13.2
+      ember-cli-babel: 8.0.0(@babel/core@7.23.0)
+    optionalDependencies:
+      '@ember-data/graph': 5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))
+      '@ember-data/json-api': 5.3.0(@babel/core@7.23.0)(@ember-data/graph@5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))))(@ember-data/request-utils@5.3.0(@babel/core@7.23.0))(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(ember-inflector@4.0.2)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@glint/template'
+      - supports-color
+
   '@ember-data/legacy-compat@5.3.0(v75dut5teixakqdt7pnkovbtxu)':
     dependencies:
       '@ember-data/private-build-infra': 5.3.0
@@ -11310,14 +11387,14 @@ snapshots:
       - '@glint/template'
       - supports-color
 
-  '@ember-data/model@5.3.0(@babel/core@7.23.0)(@ember-data/legacy-compat@5.3.0(@babel/core@7.23.0)(@ember-data/request@5.3.0(@babel/core@7.23.0)))(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(ember-inflector@4.0.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))':
+  '@ember-data/model@5.3.0(@babel/core@7.23.0)(@ember-data/legacy-compat@5.3.0(@babel/core@7.23.0)(@ember-data/request@5.3.0(@babel/core@7.23.0)))(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(ember-inflector@4.0.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))':
     dependencies:
       '@ember-data/legacy-compat': 5.3.0(@babel/core@7.23.0)(@ember-data/request@5.3.0(@babel/core@7.23.0))
       '@ember-data/private-build-infra': 5.3.0
-      '@ember-data/store': 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+      '@ember-data/store': 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
       '@ember-data/tracking': 5.3.0(@babel/core@7.23.0)
       '@ember/edition-utils': 1.2.0
-      '@ember/string': 3.1.1
+      '@ember/string': 4.0.1
       '@embroider/macros': 1.13.2
       ember-cached-decorator-polyfill: 1.0.2(@babel/core@7.23.0)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
       ember-cli-babel: 8.0.0(@babel/core@7.23.0)
@@ -11375,6 +11452,31 @@ snapshots:
       '@ember-data/debug': 5.3.0(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember/string@3.1.1)
       '@ember-data/graph': 5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))
       '@ember-data/json-api': 5.3.0(@babel/core@7.23.0)(@ember-data/graph@5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))))(@ember-data/request-utils@5.3.0(@babel/core@7.23.0))(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(ember-inflector@4.0.2)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@glint/template'
+      - ember-source
+      - supports-color
+
+  '@ember-data/model@5.3.0(z53ps3lflqmi2yk2lvxcqs7aoq)':
+    dependencies:
+      '@ember-data/legacy-compat': 5.3.0(@babel/core@7.23.0)(@ember-data/request@5.3.0(@babel/core@7.23.0))
+      '@ember-data/private-build-infra': 5.3.0
+      '@ember-data/store': 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+      '@ember-data/tracking': 5.3.0(@babel/core@7.23.0)
+      '@ember/edition-utils': 1.2.0
+      '@ember/string': 4.0.1
+      '@embroider/macros': 1.13.2
+      ember-cached-decorator-polyfill: 1.0.2(@babel/core@7.23.0)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+      ember-cli-babel: 8.0.0(@babel/core@7.23.0)
+      ember-cli-string-utils: 1.1.0
+      ember-cli-test-info: 1.0.0
+      ember-inflector: 4.0.2
+      inflection: 2.0.1
+    optionalDependencies:
+      '@ember-data/debug': 5.3.0(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember/string@4.0.1)
+      '@ember-data/graph': 5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))
+      '@ember-data/json-api': 5.3.0(@babel/core@7.23.0)(@ember-data/graph@5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))))(@ember-data/request-utils@5.3.0(@babel/core@7.23.0))(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(ember-inflector@4.0.2)
     transitivePeerDependencies:
       - '@babel/core'
       - '@glint/template'
@@ -11442,6 +11544,19 @@ snapshots:
       - '@glint/template'
       - supports-color
 
+  '@ember-data/serializer@5.3.0(@babel/core@7.23.0)(@ember/string@4.0.1)(ember-inflector@4.0.2)':
+    dependencies:
+      '@ember-data/private-build-infra': 5.3.0
+      '@ember/string': 4.0.1
+      '@embroider/macros': 1.13.2
+      ember-cli-babel: 8.0.0(@babel/core@7.23.0)
+      ember-cli-test-info: 1.0.0
+      ember-inflector: 4.0.2
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@glint/template'
+      - supports-color
+
   '@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@3.1.1)(@glimmer/tracking@1.1.2)(ember-source@4.12.3(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))':
     dependencies:
       '@ember-data/private-build-infra': 5.3.0
@@ -11462,6 +11577,21 @@ snapshots:
       '@ember-data/private-build-infra': 5.3.0
       '@ember-data/tracking': 5.3.0(@babel/core@7.23.0)
       '@ember/string': 3.1.1
+      '@embroider/macros': 1.13.2
+      '@glimmer/tracking': 1.1.2
+      ember-cached-decorator-polyfill: 1.0.2(@babel/core@7.23.0)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+      ember-cli-babel: 8.0.0(@babel/core@7.23.0)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@glint/template'
+      - ember-source
+      - supports-color
+
+  '@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))':
+    dependencies:
+      '@ember-data/private-build-infra': 5.3.0
+      '@ember-data/tracking': 5.3.0(@babel/core@7.23.0)
+      '@ember/string': 4.0.1
       '@embroider/macros': 1.13.2
       '@glimmer/tracking': 1.1.2
       ember-cached-decorator-polyfill: 1.0.2(@babel/core@7.23.0)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
@@ -11540,6 +11670,8 @@ snapshots:
       ember-cli-babel: 7.26.11
     transitivePeerDependencies:
       - supports-color
+
+  '@ember/string@4.0.1': {}
 
   '@ember/test-helpers@3.2.0(ember-source@4.12.3(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))(webpack@5.88.2)':
     dependencies:
@@ -16507,6 +16639,39 @@ snapshots:
       '@ember-data/tracking': 5.3.0(@babel/core@7.23.0)
       '@ember/edition-utils': 1.2.0
       '@ember/string': 3.1.1
+      '@embroider/macros': 1.13.2
+      broccoli-merge-trees: 4.2.0
+      ember-auto-import: 2.6.3(webpack@5.88.2)
+      ember-cli-babel: 8.0.0(@babel/core@7.23.0)
+      ember-inflector: 4.0.2
+      webpack: 5.88.2
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@glimmer/tracking'
+      - '@glint/template'
+      - '@swc/core'
+      - ember-source
+      - esbuild
+      - supports-color
+      - uglify-js
+      - webpack-cli
+
+  ember-data@5.3.0(@babel/core@7.23.0)(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)):
+    dependencies:
+      '@ember-data/adapter': 5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember/string@4.0.1)(ember-inflector@4.0.2)
+      '@ember-data/debug': 5.3.0(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(@ember/string@4.0.1)
+      '@ember-data/graph': 5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))
+      '@ember-data/json-api': 5.3.0(@babel/core@7.23.0)(@ember-data/graph@5.3.0(@babel/core@7.23.0)(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))))(@ember-data/request-utils@5.3.0(@babel/core@7.23.0))(@ember-data/store@5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2)))(ember-inflector@4.0.2)
+      '@ember-data/legacy-compat': 5.3.0(sfa35kk4fu7gnlrlfeo2cwngji)
+      '@ember-data/model': 5.3.0(z53ps3lflqmi2yk2lvxcqs7aoq)
+      '@ember-data/private-build-infra': 5.3.0
+      '@ember-data/request': 5.3.0(@babel/core@7.23.0)
+      '@ember-data/request-utils': 5.3.0(@babel/core@7.23.0)
+      '@ember-data/serializer': 5.3.0(@babel/core@7.23.0)(@ember/string@4.0.1)(ember-inflector@4.0.2)
+      '@ember-data/store': 5.3.0(@babel/core@7.23.0)(@ember-data/tracking@5.3.0(@babel/core@7.23.0))(@ember/string@4.0.1)(@glimmer/tracking@1.1.2)(ember-source@5.3.0(@babel/core@7.23.0)(@glimmer/component@1.1.2(@babel/core@7.23.0))(webpack@5.88.2))
+      '@ember-data/tracking': 5.3.0(@babel/core@7.23.0)
+      '@ember/edition-utils': 1.2.0
+      '@ember/string': 4.0.1
       '@embroider/macros': 1.13.2
       broccoli-merge-trees: 4.2.0
       ember-auto-import: 2.6.3(webpack@5.88.2)
